@@ -28,7 +28,7 @@ function displayCurrentWeather(city) {
           </div>
         </div>
         <div class="px-3">
-          <p class="fs-5">Real feel: <strong>${realFeel}</strong></p>
+          <p class="fs-5">Real feel: <strong>${realFeel}°C</strong></p>
           <p class="fs-5text-capitalize"><strong>${weatherDescription}
           </strong></p>
           <p class="fs-5">Vant: <strong>${windSpeed} km/h</strong></p>

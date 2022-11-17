@@ -2,10 +2,17 @@ const bucharest = document.querySelector(".bucharest");
 const timisoara = document.querySelector(".timisoara");
 const oradea = document.querySelector(".oradea");
 
+function updateCityDisplay(city) {
+  const currentCity = document.getElementById("current-city");
+  currentCity.innerHTML = city + ".";
+}
+
 function updateCity(city) {
   //updatam orasul afisat
-  const currentCity = document.getElementById("current-city");
-  currentCity.innerHTML = city;
+  updateCityDisplay(city);
+
+  localStorage.setItem("city", city);
+
   //afisam noile date de la API
   displayCurrentWeather(city);
 }
