@@ -13,8 +13,11 @@ function updateCity(city) {
 
   localStorage.setItem("city", city);
 
-  //afisam noile date de la API
+  //afisam noile date pentru vremes curenta de la API
   displayCurrentWeather(city);
+
+  //afisam noile date pentru prognoza pe 5 zile
+  displayWeatherForecast(city);
 }
 
 bucharest.addEventListener("click", function () {
