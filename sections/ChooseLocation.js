@@ -1,6 +1,8 @@
 const bucharest = document.querySelector(".bucharest");
 const timisoara = document.querySelector(".timisoara");
 const oradea = document.querySelector(".oradea");
+const arad = document.querySelector(".arad");
+const sibiu = document.querySelector(".sibiu");
 
 function updateCityDisplay(city) {
   const currentCity = document.getElementById("current-city");
@@ -30,4 +32,12 @@ timisoara.addEventListener("click", function () {
 
 oradea.addEventListener("click", function () {
   updateCity("Oradea");
+});
+
+arad.addEventListener("click", function () {
+  updateCity("Arad");
+});
+
+sibiu.addEventListener("click", function () {
+  updateCity("Sibiu");
 });
